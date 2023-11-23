@@ -28,8 +28,11 @@ spec:
       script: |
         # Clone the Git repository
         git clone $(params.url)
+        cd helloworld
         git checkout $(params.revision)
         # Check out the specified revision
+	# Show Commit
+	git rev-parse HEAD
     - name: read-readme
       image: alpine
       workingDir: /workspace/source/

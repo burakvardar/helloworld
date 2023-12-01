@@ -1,0 +1,12 @@
+[[build.env]]
+name = "PORT"
+value = "80"
+
+[[build.env]]
+name = "BUILDER"
+value = "gcr.io/buildpacks/builder:v2.1.0"
+
+[[build.env]]
+name = "BUILDPACK"
+value = "gcr.io/paketo-buildpacks/nodejs:v1.12.3"
+

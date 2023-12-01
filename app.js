@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello, World!\n');
 });
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running at http://localhost:${PORT}/`);

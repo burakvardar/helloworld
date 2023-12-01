@@ -1,31 +1,10 @@
-# Bu kod, "hello world" çıktısı veren bir Python web uygulamasıdır.
+from flask import Flask
 
-# Import gerekli modüller
-from flask import Flask, render_template
-
-# Flask uygulamasını başlat
 app = Flask(__name__)
 
-# Ana rotayı tanımla
-@app.route("/")
-def index():
-    return render_template("index.html")
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
-# HTML şablonunu tanımla
-@app.route("/index.html")
-def index_html():
-    return """
-    <html>
-        <head>
-            <title>Hello World from Burak</title>
-        </head>
-        <body>
-            <h1>Hello World!</h1>
-        </body>
-    </html>
-    """
-
-# Uygulamayı çalıştır
-if __name__ == "__main__":
-    app.run(debug=True)
-
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=8080)

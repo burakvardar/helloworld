@@ -1,0 +1,6 @@
+[buildpack]
+id = "example/hello-world"
+version = "0.0.1"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"

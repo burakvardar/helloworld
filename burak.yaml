@@ -1,0 +1,29 @@
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;42r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[42;1H"/var/folders/jg/xwtv1q2d73vc6yl_jz8jkpc80000gn/T/kubectl-edit-3592251854.yaml" 66L, 1774B[1;1H# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2024-06-25T14:49:59Z"
+  generation: 1
+  labels:
+    app: burak
+  name: burak
+  namespace: default
+  resourceVersion: "788890"
+  uid: 076c5426-33cb-4e85-9ebb-52aab1e4d741
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 3
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:[24;7Happ: burak
+  strategy:
+    rollingUpdate:[27;7HmaxSurge: 25%[28;7HmaxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:[32;7HcreationTimestamp: null[33;7Hlabels:[34;9Happ: burak
+    spec:[36;7Hcontainers:[37;7H- image: nginx[38;9HimagePullPolicy: Always[39;9Hname: nginx[40;9Hresources: {}[41;9HterminationMessagePath: /dev/termination-log[1;1H[?25h[?4m[42;1H[?2004l[>4;m[23;2t[23;1t[42;1H[K[42;1H[?1004l[?2004l[?1l>[?1049l[>4;m
